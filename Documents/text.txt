@@ -1,1 +1,36 @@
-test
+Scene Setup:
+Create a new Unity project.
+Design your main area scene with the table, keyholes, and visible doors.
+Place the doors in the scene, each labelled as “Door 1,” “Door 2,” etc.
+Set up the camera view so that the player can see the doors and the table.
+Door Prefabs:
+Create door prefabs for each level. These prefabs will have a script attached to them to handle opening and closing.
+Each door prefab should have a unique identifier (e.g., “Door 1,” “Door 2,” etc.).
+Key Prefabs:
+Create key prefabs for each level. These prefabs will be collectible items.
+Attach a script to the key prefabs to handle interactions (e.g., picking up the key).
+Player Interaction:
+Write a script for the player controller.
+When the player approaches a door, check if they have the corresponding key.
+If they do, allow them to interact with the door (e.g., press a button to open it).
+Level Progression:
+Create a manager script to keep track of the player’s progress.
+Initially, only “Door 1” is open.
+When the player solves the puzzle inside the room behind “Door 1,” they receive the key for “Door 2.”
+The manager script should handle unlocking subsequent doors as the player progresses.
+Puzzle Rooms:
+Create separate scenes for each puzzle room (behind each door).
+Design unique puzzles for each room. These can be anything from logic puzzles to platform challenges.
+When the player solves a puzzle, they receive the key for the next door.
+Key Collection:
+When the player collects a key, update the manager script to reflect their progress.
+For example, if they collect the key for “Door 2,” set a flag that allows them to open “Door 2.”
+Final Level:
+Once the player has collected all four keys, unlock the final door.
+Behind this door, create a special room or scene to signify the completion of the game.
+Win Condition:
+When the player enters the final room, display a victory message or animation.
+You can also add a restart button to play again.
+Testing and Refinement:
+Test your game thoroughly to ensure that the progression works correctly.
+Refine the puzzles, adjust difficulty, and make sure everything feels cohesive.test
