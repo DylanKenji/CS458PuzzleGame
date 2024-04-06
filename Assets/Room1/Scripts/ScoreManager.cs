@@ -3,19 +3,27 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TMP_Text scoreText;
+    public static ScoreManager Instance { get; private set; }
+    public TMP_Text scoreText; // Reference to the Text component displaying the score
+
     private int score = 0;
     private Color currentColor; // Removed property, directly accessed from ColorChangingCube
 
-    private void Start()
+    private void Awake()
     {
-        UpdateScoreUI();
+        Instance = this;
     }
 
-    public void IncrementScore()
+    private void UpdateScoreUI()
     {
-        score++;
+        scoreText.text = "Score: " + score;
+    }
+
+    public void IncrementScore(float points)
+    {
+        score += (int)points;
         UpdateScoreUI();
+        Debug.Log("Score incremented by " + points + ". Total score: " + score);
     }
 
     // Removed SetCurrentColor method
@@ -30,10 +38,5 @@ public class ScoreManager : MonoBehaviour
     public void SetCurrentColor(Color newColor)
     {
         currentColor = newColor;
-    }
-
-    private void UpdateScoreUI()
-    {
-        scoreText.text = "Score: " + score;
     }
 }
