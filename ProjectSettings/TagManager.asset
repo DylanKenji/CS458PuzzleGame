@@ -9,6 +9,15 @@ TagManager:
   - GreenBall
   - RedBall
   - YellowBall
+  - feet
+  - KeyHolder1
+  - KeyHolder2
+  - KeyHolder3
+  - KeyHolder4
+  - Key1
+  - Key2
+  - Key3
+  - Key4
   layers:
   - Default
   - TransparentFX
