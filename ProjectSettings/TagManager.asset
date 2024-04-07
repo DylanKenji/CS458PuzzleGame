@@ -18,13 +18,13 @@ TagManager:
   - Key2
   - Key3
   - Key4
-  - RightHand
-  - LeftHand
+  - SamplesInfoPanel
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
