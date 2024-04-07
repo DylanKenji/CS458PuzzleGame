@@ -5,12 +5,14 @@ public class DestroyOnGrab : MonoBehaviour
 {
     private XRGrabInteractable interactable;
     private ScoreManager scoreManager;
+    private AudioSource audioSource; // Reference to AudioSource component
 
     private void Start()
     {
         interactable = GetComponent<XRGrabInteractable>();
         interactable.onSelectEntered.AddListener(OnGrab);
         scoreManager = FindObjectOfType<ScoreManager>();
+        audioSource = GetComponent<AudioSource>(); // Get AudioSource component
     }
 
     private void OnGrab(XRBaseInteractor interactor)
@@ -33,6 +35,12 @@ public class DestroyOnGrab : MonoBehaviour
                 break;
             default:
                 break;
+        }
+
+        // Play destroy sound
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.Play();
         }
 
         Destroy(gameObject);

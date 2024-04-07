@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour
     private void UpdateScoreUI()
     {
         scoreText.text = "Score: " + score;
+        CheckVictory(); // Call the method to check for victory condition after updating the score UI
     }
 
     public void IncrementScore(float points)
@@ -26,17 +27,13 @@ public class ScoreManager : MonoBehaviour
         Debug.Log("Score incremented by " + points + ". Total score: " + score);
     }
 
-    // Removed SetCurrentColor method
-
-    // Added method to check if the current color matches the ball color
-    public bool IsCurrentColorMatch(Color ballColor)
+    // Added method to check for victory condition
+    private void CheckVictory()
     {
-        return currentColor == ballColor;
-    }
-
-    // Added method to update the current color directly from ColorChangingCube
-    public void SetCurrentColor(Color newColor)
-    {
-        currentColor = newColor;
+        if (score >= 500)
+        {
+            scoreText.text = "You Win!";
+        }
     }
 }
+

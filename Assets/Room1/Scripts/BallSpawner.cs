@@ -11,6 +11,9 @@ public class BallSpawner : MonoBehaviour
 
     IEnumerator Start()
     {
+        // Wait for 20 seconds before starting spawning
+        yield return new WaitForSeconds(20f);
+
         // Continue spawning balls until spawn duration runs out
         while (spawnDuration > 0)
         {
@@ -37,4 +40,5 @@ public class BallSpawner : MonoBehaviour
         }
     }
 }
+
 
