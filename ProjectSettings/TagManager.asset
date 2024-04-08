@@ -20,6 +20,11 @@ TagManager:
   - Key4
   - SamplesInfoPanel
   - Wall
+  - Button1
+  - Button2
+  - Button3
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX
