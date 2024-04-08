@@ -9,7 +9,6 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text scoreText; // Reference to the Text component displaying the score
 
     private int score = 0;
-    private Color currentColor; // Removed property, directly accessed from ColorChangingCube
 
     private void Awake()
     {
