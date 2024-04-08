@@ -14,9 +14,6 @@ public class PlayerController : MonoBehaviour
 
             // Increment the balls collected counter
             ballsCollected++;
-
-            // Optionally, provide feedback to the player
-            Debug.Log("Ball collected! Total balls collected: " + ballsCollected);
         }
     }
 }

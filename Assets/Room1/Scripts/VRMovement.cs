@@ -3,7 +3,7 @@ using UnityEngine.XR;
 
 public class VRMovement : MonoBehaviour
 {
-    public XRNode inputSource; // Set this to either Left or Right controller
+    public XRNode inputSource; 
     public float speed = 1.0f;
 
     void Update()
