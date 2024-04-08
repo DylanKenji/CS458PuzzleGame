@@ -1,7 +1,7 @@
-# CS458PuzzleGame
+# CS458 Triple Challange
 
 # Project Description
-The primary goal of this project is to design and develop a collection of interactive puzzle challenges that are specifically designed for VR environments. The puzzles will require user interaction within virtual environments and users will manipulate virtual objects and images to navigate through scenarios to solve a variety of puzzles.
+The primary goal of this project is to design and develop a collection of interactive puzzle challenges that are specifically designed for VR environments. The puzzles will require user interaction within virtual environments and users will manipulate virtual objects and images to navigate through scenarios to solve a variety of puzzles/mini games.
 
 # Citation/Inspiration
 The project draws inspiration from games like “The Witness” with its intricate puzzles and immersive environments to create a virtual reality experience centered around interactive challenges. Drawing from The Witness’s diverse puzzle designs, the goal is to create multiple VR settings in which the player can explore the environment to solve the puzzles. The Witness game can be accessed at: 
