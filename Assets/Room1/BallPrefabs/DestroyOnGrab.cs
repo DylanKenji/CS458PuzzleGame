@@ -38,11 +38,8 @@ public class DestroyOnGrab : MonoBehaviour
         }
 
         // Play destroy sound
-        if (audioSource != null && audioSource.clip != null)
-        {
-            audioSource.Play();
-        }
 
         Destroy(gameObject);
+        audioSource.Play();
     }
 }
