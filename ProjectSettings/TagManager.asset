@@ -25,6 +25,8 @@ TagManager:
   - Button3
   - LeftHand
   - RightHand
+  - RoomLight
+  - Ignore
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class BallSpawner : MonoBehaviour
 
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(10f);
 
    
         while (spawnDuration > 0)

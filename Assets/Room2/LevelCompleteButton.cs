@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class LevelCompleteButton : MonoBehaviour
 {
     private XRGrabInteractable interactable;
-   
+
+    [System.Obsolete]
     private void Start()
     {
         interactable = GetComponent<XRGrabInteractable>();

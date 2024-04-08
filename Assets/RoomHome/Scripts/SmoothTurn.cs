@@ -7,9 +7,7 @@ public class SmoothTurn : MonoBehaviour
 {
 
     public Rigidbody player;
-
     public Transform rotator;
-
     public float speed;
     // Start is called before the first frame update
     void Start()

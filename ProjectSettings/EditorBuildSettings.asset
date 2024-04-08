@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Room2/Room2.unity
     guid: c4c79d6caf150e54b809f9b214570efd
+  - enabled: 1
+    path: Assets/RoomEnd/RoomEnd.unity
+    guid: c2639c6bd6834d544b2aef431e41812e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7f3613e3f7e9270498491e416a3ffca0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 05c86c5404d1cae4c9745d93b2bc8926, type: 2}

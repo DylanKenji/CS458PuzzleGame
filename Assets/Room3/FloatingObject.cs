@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// this script just adds a floating/spinning look to an object that it's attached to.
+// You can also customize the floating height, speed, and spin in the inspection parameters
+
 public class FloatingObject : MonoBehaviour
 {
     public float floatHeight = 0.5f;

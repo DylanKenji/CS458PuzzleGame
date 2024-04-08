@@ -6,6 +6,7 @@ public class DestroyOnGrab : MonoBehaviour
     private XRGrabInteractable interactable;
     private ScoreManager scoreManager;
 
+    [System.Obsolete]
     private void Start()
     {
         interactable = GetComponent<XRGrabInteractable>();
