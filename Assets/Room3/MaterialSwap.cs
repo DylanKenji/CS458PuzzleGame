@@ -12,8 +12,8 @@ public class MaterialSwap : MonoBehaviour
     public GameObject audioGameObject;
 
     private Renderer rend;
-    private static int keysFoundCount = 0; // Static variable to be shared among all instances of MaterialSwap
-    private static int totalKeys = 4; // Total number of keys to find
+    private static int keysFoundCount = 0;
+    private static int totalKeys = 4; 
 
     void Start()
     {
@@ -48,11 +48,10 @@ public class MaterialSwap : MonoBehaviour
         PlayAudio();
         keysFoundCount++;
 
-        Debug.Log("Keys found: " + keysFoundCount + "/" + totalKeys); // Debug log message
+        Debug.Log("Keys found: " + keysFoundCount + "/" + totalKeys);
 
         if (keysFoundCount == totalKeys)
         {
-            // Play audio clip when all keys are found
             PlayCompletionAudio();
         }
     }
@@ -73,6 +72,7 @@ public class MaterialSwap : MonoBehaviour
             if (completionAudioSource != null)
             {
                 completionAudioSource.Play();
+                RoomManager.MarkRoomCompleted(RoomManager.Room3);
             }
         }
     }
