@@ -8,11 +8,13 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance { get; private set; }
     public TMP_Text scoreText; // Reference to the Text component displaying the score
 
+    public AudioSource audioSource;
     private int score = 0;
 
     private void Awake()
     {
         Instance = this;
+        audioSource = GetComponent<AudioSource>(); // Get AudioSource component
     }
 
     private void UpdateScoreUI()
@@ -26,6 +28,7 @@ public class ScoreManager : MonoBehaviour
         score += (int)points;
         UpdateScoreUI();
         Debug.Log("Score incremented by " + points + ". Total score: " + score);
+        audioSource.Play();
     }
 
     // Added method to check for victory condition
