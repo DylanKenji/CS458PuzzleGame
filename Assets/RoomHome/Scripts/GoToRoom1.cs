@@ -9,7 +9,7 @@ public class GoToRoom1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("LeftHand") || collision.gameObject.CompareTag("RightHand"))
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("Room1");
         }
     }
 }

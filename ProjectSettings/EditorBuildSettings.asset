@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Room3/Room3.unity
     guid: 65bd9f8ab94a0994f8c5ace08b583f68
   - enabled: 1
-    path: Assets/Room1/Level 1.unity
+    path: Assets/Room1/Room1.unity
     guid: 590c09e80ae19c94e98b6f71aed6df46
   - enabled: 1
     path: Assets/Room2/Room2.unity

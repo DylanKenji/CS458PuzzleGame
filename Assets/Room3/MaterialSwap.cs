@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class MaterialSwap : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class MaterialSwap : MonoBehaviour
 
     private Renderer rend;
     private static int keysFoundCount = 0;
-    private static int totalKeys = 4; 
+    private static readonly int totalKeys = 4; 
 
     void Start()
     {
@@ -73,6 +74,7 @@ public class MaterialSwap : MonoBehaviour
             {
                 completionAudioSource.Play();
                 RoomManager.MarkRoomCompleted(RoomManager.Room3);
+                SceneManager.LoadScene("HomeRoom");
             }
         }
     }
