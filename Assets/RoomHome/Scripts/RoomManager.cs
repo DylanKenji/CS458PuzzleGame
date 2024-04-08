@@ -4,7 +4,7 @@ using UnityEngine;
 public class RoomManager : MonoBehaviour
 {
     // Define constants for room names
-    public const string Room1 = "Level 1";
+    public const string Room1 = "Room1";
     public const string Room2 = "Room2";
     public const string Room3 = "Room3";
 

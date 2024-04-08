@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -32,8 +34,18 @@ public class ScoreManager : MonoBehaviour
     {
         if (score >= 500)
         {
-            scoreText.text = "You Win!";
+            StartCoroutine(LoadHomeRoomAfterDelay());
         }
     }
-}
 
+    IEnumerator LoadHomeRoomAfterDelay()
+    {
+        // Display "You Win!" for 3 seconds
+        scoreText.text = "You Win!";
+        yield return new WaitForSeconds(3f);
+
+        // Load the HomeRoom scene after the delay
+        RoomManager.MarkRoomCompleted(RoomManager.Room1);
+        SceneManager.LoadScene("HomeRoom");
+    }
+}
